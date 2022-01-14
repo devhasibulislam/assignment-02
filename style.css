@@ -99,8 +99,6 @@ header {
 }
 
 /* segment 2 */
-main {}
-
 .hero {
     padding: 70px 0;
     box-sizing: border-box;
@@ -115,8 +113,6 @@ main {}
 .desc {
     width: 50%;
 }
-
-.hero__desc {}
 
 .hero__desc h1 {
     margin: 0;
@@ -139,6 +135,20 @@ main {}
     background-color: var(--color-razzmatazz-lips);
     padding: 10px 20px;
     border-radius: 30px;
+    transition: var(--default-transiiton);
+}
+
+.btn span:hover {
+    background-color: var(--color-paper-white);
+    border: 1px solid var(--color-dove-gray);
+}
+
+.btn span:hover a {
+    color: var(--color-midnight-dark);
+}
+
+.btn span:hover i {
+    color: var(--color-midnight-dark);
 }
 
 .hero__desc span a {
@@ -224,6 +234,23 @@ main {}
     }
 }
 
-.hero__image span {}
+/* segment 3 */
+.brand__groups {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #8d8a8a1c;
+    border-bottom: 1px solid #8d8a8a1c;
+}
 
-.hero__image span img {}
+.brand__groups img {
+    filter: grayscale(100%);
+    transition: var(--default-transiiton);
+    width: 8%;
+}
+
+.brand__groups img:hover {
+    filter: none;
+}
