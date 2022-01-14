@@ -12,6 +12,8 @@
     --color-midnight-dark: #000000;
     --google-font: 'Montserrat', sans-serif;
     --default-transiiton: all 0.3s linear;
+    --default-box-shadow: 0px 1px 1px 0px rgba(245, 245, 245, 0.75);
+
 }
 
 body {
@@ -45,6 +47,7 @@ ul li {
 /* segment 1 */
 header {
     background-color: var(--color-paper-white);
+    box-shadow: var(--default-box-shadow);
 }
 
 .header {
@@ -96,3 +99,131 @@ header {
 }
 
 /* segment 2 */
+main {}
+
+.hero {
+    padding: 70px 0;
+    box-sizing: border-box;
+}
+
+.hero__section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.desc {
+    width: 50%;
+}
+
+.hero__desc {}
+
+.hero__desc h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero__desc p {
+    word-spacing: 5px;
+    line-height: 25px;
+    font-weight: 500;
+    margin: 5% 0;
+}
+
+.btn {
+    margin-top: 5%;
+}
+
+.btn span {
+    background-color: var(--color-razzmatazz-lips);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.hero__desc span a {
+    color: var(--color-paper-white);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.hero__desc span i {
+    color: var(--color-paper-white);
+    margin-left: 1%;
+    animation: left_right 1s linear 0s infinite alternate none;
+    animation-play-state: running;
+}
+
+@keyframes left_right {
+    0% {
+        transform: translate(0px);
+    }
+
+    20% {
+        transform: translateX(2px);
+    }
+
+    40% {
+        transform: translateX(4px);
+    }
+
+    60% {
+        transform: translateX(6px);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+.hero__image {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.hero__image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(images/pictures/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    animation: increase_decrease 1s linear 0s infinite alternate forwards;
+    animation-play-state: running;
+    z-index: -1;
+}
+
+@keyframes increase_decrease {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.01);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+
+    75% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1.04);
+    }
+}
+
+.hero__image span {}
+
+.hero__image span img {}
