@@ -10,10 +10,11 @@
     --color-gray: gray;
     --color-shuttle-gray: #5e6366;
     --color-midnight-dark: #000000;
+    --color-rating-star: #fb8200;
     --google-font: 'Montserrat', sans-serif;
     --default-transiiton: all 0.3s linear;
     --default-box-shadow: 0px 1px 1px 0px rgba(245, 245, 245, 0.75);
-
+    --product-box-shadow: 0px 0px 10px 0px rgba(138, 138, 138, 0.75);
 }
 
 body {
@@ -157,7 +158,7 @@ header {
     font-size: 15px;
 }
 
-.hero__desc span i {
+.hero__desc span i, .see_mre_btn>a>i {
     color: var(--color-paper-white);
     margin-left: 1%;
     animation: left_right 1s linear 0s infinite alternate none;
@@ -254,3 +255,132 @@ header {
 .brand__groups img:hover {
     filter: none;
 }
+
+/* segment 4 */
+.collection {
+    width: 60%;
+    margin: 100px auto 50px auto;
+}
+
+.collection>h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.popular__collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    padding-top: 50px;
+}
+
+.product__box {
+    column-gap: 30px;
+    padding: 20px;
+    box-shadow: var(--product-box-shadow);
+    border-radius: 5px;
+    margin: 7%;
+    transition: var(--default-transiiton);
+}
+
+.product__box:hover {
+    box-shadow: var(--default-box-shadow);
+}
+
+.product__image {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.product__image span {
+    display: block;
+}
+
+.product__image span img {
+    transition: var(--default-transiiton);
+}
+
+.product__image span img:hover {
+    transform: scale(1.2);
+}
+
+.product__title h4 a {
+    font-size: 20px;
+    transition: var(--default-transiiton);
+}
+
+.product__title h4:hover a {
+    color: var(--color-razzmatazz-lips);
+}
+
+.product__price h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product__rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rating__stars {
+    margin-right: 2%;
+}
+
+.rating__stars i {
+    color: var(--color-rating-star);
+}
+
+.rating__number {
+    margin-left: 2%;
+}
+
+.rating__number p {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.product__desc p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    word-spacing: 3px;
+    margin: 0;
+}
+
+.see_mre_btn {
+    position: absolute;
+    bottom: -1%;
+    right: 3%;
+    width: 15%;
+    text-align: right;
+}
+
+.see_mre_btn a {
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: var(--default-transiiton);
+}
+
+.see_mre_btn:hover a {
+    background-color: var(--color-razzmatazz-lips);
+}
+
+.see_mre_btn:hover a>* {
+    color: var(--color-paper-white);
+}
+
+.see_mre_btn a span {
+    color: var(--color-razzmatazz-lips);
+    font-weight: 500;
+}
+
+.see_mre_btn a i {
+    color: var(--color-razzmatazz-lips);
+    margin-left: 0%;
+}
+
+/* segment 5 */
