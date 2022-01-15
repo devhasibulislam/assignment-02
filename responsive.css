@@ -500,3 +500,13 @@
         flex-grow: 1;
     }
 }
+
+@media (max-width: 810px) {
+    .bonus__box:nth-child(1) {
+        display: none;
+    }
+
+    .popular__collection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
