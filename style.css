@@ -246,7 +246,7 @@ header {
     75% {
         transform: scale(1.04);
     }
-    
+
     100% {
         transform: scale(1.05);
     }
@@ -525,11 +525,34 @@ header {
 
 .info__image span img {
     border-radius: 50%;
-    transition: var(--default-transiiton);
+    animation: zooming 5s ease 0s infinite alternate both;
+    animation-play-state: running;
 }
 
-.info__image span img:hover {
-    transform: scale(1.1);
+@keyframes zooming {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1.01);
+    }
+
+    40% {
+        transform: scale(1.02);
+    }
+
+    60% {
+        transform: scale(1.03);
+    }
+
+    80% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
 }
 
 .bonus__box h1 {
@@ -560,16 +583,19 @@ header {
     transition: var(--default-transiiton);
 }
 
-.author__social a:nth-child(1):hover i{
+.author__social a:nth-child(1):hover i {
     color: var(--color-github);
 }
+
 .author__social a:nth-child(2):hover i {
     color: var(--color-quora);
 }
-.author__social a:nth-child(3):hover i{
+
+.author__social a:nth-child(3):hover i {
     color: var(--color-linkdin);
 }
-.author__social a:nth-child(4):hover i{
+
+.author__social a:nth-child(4):hover i {
     color: var(--color-youtube);
 }
 
