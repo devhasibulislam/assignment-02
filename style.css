@@ -367,7 +367,7 @@ header {
     line-height: 25px;
     word-spacing: 3px;
     margin: 0;
-    color: var(--color-shuttle-gray);
+    color: var(--color-dove-gray);
 }
 
 .see_mre_btn {
@@ -525,7 +525,7 @@ header {
 
 .info__image span img {
     border-radius: 50%;
-    animation: zooming 5s ease 0s infinite alternate both;
+    animation: zooming 3s ease-in-out 0.1s infinite;
     animation-play-state: running;
 }
 
