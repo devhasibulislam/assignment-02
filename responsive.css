@@ -440,17 +440,29 @@
     .bonus__box:nth-child(3) {
         display: none;
     }
+
+    .bonus__box{
+        flex-grow: 1;
+    }
 }
 
 @media (max-width: 778px) {
     .bonus__box:nth-child(1) {
         display: none;
     }
+
+    .bonus__box{
+        flex-grow: 1;
+    }
 }
 
 @media (max-width: 498px) {
     .bonus__box:nth-child(2) {
         display: none;
+    }
+
+    .bonus__box{
+        flex-grow: 1;
     }
 }
 
