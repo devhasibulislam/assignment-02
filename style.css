@@ -138,6 +138,7 @@ header {
     line-height: 25px;
     font-weight: 500;
     margin: 5% 0;
+    color: var(--color-boltgun-metal);
 }
 
 .btn {
@@ -357,6 +358,7 @@ header {
 .rating__number p {
     font-weight: 500;
     font-size: 15px;
+    color: var(--color-dove-gray);
 }
 
 .product__desc p {
@@ -365,6 +367,7 @@ header {
     line-height: 25px;
     word-spacing: 3px;
     margin: 0;
+    color: var(--color-shuttle-gray);
 }
 
 .see_mre_btn {
@@ -594,6 +597,7 @@ header {
     line-height: 25px;
     word-spacing: 3px;
     letter-spacing: 1px;
+    color: var(--color-paper-white);
 }
 
 .footer__links {
