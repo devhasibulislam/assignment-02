@@ -230,20 +230,24 @@ header {
         transform: scale(1);
     }
 
-    25% {
+    20% {
         transform: scale(1.01);
     }
 
-    50% {
+    40% {
         transform: scale(1.02);
     }
 
-    75% {
+    50% {
         transform: scale(1.03);
     }
 
-    100% {
+    75% {
         transform: scale(1.04);
+    }
+    
+    100% {
+        transform: scale(1.05);
     }
 }
 
