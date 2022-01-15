@@ -16,6 +16,9 @@
     --color-dribble: #ea4c89;
     --color-twitter: #1DA1F2;
     --color-linkdin: #2867B2;
+    --color-github: #171515;
+    --color-youtube: #FF0000;
+    --color-quora: #b92b27;
     --google-font: 'Montserrat', sans-serif;
     --default-transiiton: all 0.3s linear;
     --default-box-shadow: 0px 1px 1px 0px rgba(245, 245, 245, 0.75);
@@ -80,7 +83,7 @@ header {
     width: 30%;
 }
 
-.group__menu{
+.group__menu {
     display: none;
 }
 
@@ -393,6 +396,175 @@ header {
 }
 
 /* segment 5 */
+.bonus {
+    position: relative;
+}
+
+.bonus_section_bg {
+    height: 70vh;
+    width: 100%;
+    background-image: url(./images/cartoons/1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+    position: relative;
+    z-index: -1;
+}
+
+.bonus_section_bg::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 0;
+}
+
+.bonus__section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.box {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bonus__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 80%;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    margin: 20px;
+    position: relative;
+    z-index: 1;
+    transition: var(--default-transiiton);
+    border-radius: 5px;
+    box-shadow: var(--product-box-shadow);
+}
+
+.bonus__box:nth-child(1) {
+    background-image: url(./images/cartoons/2.jpg);
+}
+
+.bonus__box:nth-child(2) {
+    background-image: url(./images/cartoons/3.jpg);
+}
+
+.bonus__box:nth-child(3) {
+    background-image: url(./images/cartoons/4.jpg);
+}
+
+.bonus__box:nth-child(4) {
+    background-color: rgb(192, 192, 192);
+    padding: 0 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: none;
+    margin-left: 20px;
+}
+
+.bonus__box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.bonus__box:hover {
+    transform: scale(1.05);
+}
+
+.bonus__box h1 {
+    margin: 0;
+    color: var(--color-paper-white);
+    transition: var(--default-transiiton);
+}
+
+.bonus__box p {
+    margin: 0;
+    color: var(--color-paper-white);
+    transition: var(--default-transiiton);
+}
+
+.info__image {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.info__image span img {
+    border-radius: 50%;
+    transition: var(--default-transiiton);
+}
+
+.info__image span img:hover {
+    transform: scale(1.1);
+}
+
+.bonus__box h1 {
+    margin: 10px 0;
+    color: var(--color-paper-white);
+    transition: var(--default-transiiton);
+}
+
+.bonus__box p {
+    margin-bottom: 10px;
+    color: var(--color-paper-white);
+    transition: var(--default-transiiton);
+}
+
+.author__social {
+    padding: 10px 0;
+    background-color: var(--color-paper-white);
+    text-align: center;
+}
+
+.author__social a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.author__social a i {
+    font-size: 20px;
+    transition: var(--default-transiiton);
+}
+
+.author__social a:nth-child(1):hover i{
+    color: var(--color-github);
+}
+.author__social a:nth-child(2):hover i {
+    color: var(--color-quora);
+}
+.author__social a:nth-child(3):hover i{
+    color: var(--color-linkdin);
+}
+.author__social a:nth-child(4):hover i{
+    color: var(--color-youtube);
+}
 
 /* segment 6 */
 .footer {
@@ -449,13 +621,13 @@ header {
     border: 1px solid transparent;
 }
 
-.social__links a:nth-child(2):hover{
+.social__links a:nth-child(2):hover {
     background-color: var(--color-dribble);
     color: var(--color-paper-white);
     border: 1px solid transparent;
 }
 
-.social__links a:nth-child(3):hover{
+.social__links a:nth-child(3):hover {
     background-color: var(--color-twitter);
     color: var(--color-paper-white);
     border: 1px solid transparent;

@@ -345,7 +345,7 @@
         position: relative;
     }
 
-    .header__menu > ul {
+    .header__menu>ul {
         display: none;
     }
 
@@ -358,11 +358,13 @@
         text-align: center;
         order: 1;
     }
+
     .header__menu {
         width: 25%;
         position: relative;
     }
-    .header__menu > ul {
+
+    .header__menu>ul {
         display: none;
         flex-direction: column;
         z-index: 9;
@@ -374,7 +376,7 @@
         transition: var(--default-transiiton);
     }
 
-    .header__menu:hover ul{
+    .header__menu:hover ul {
         display: block;
     }
 
@@ -387,6 +389,7 @@
     .footer__links {
         width: 50%;
     }
+
     .footer__desc p {
         font-size: 11px;
     }
@@ -396,31 +399,92 @@
     .footer__links {
         width: 100%;
     }
+
     .see_mre_btn a span {
         font-size: 10px;
     }
-    .see_mre_btn > a > i {
+
+    .see_mre_btn>a>i {
         color: var(--color-dribble);
         font-size: 10px;
     }
+
     .see_mre_btn a {
         padding: 3px 10px;
     }
+
     .product__desc p {
         font-size: 10px;
         line-height: 10px;
     }
+
     .rating__number p {
         font-size: 10px;
         margin: 0;
     }
+
     .product__title h4 a {
         font-size: 11px;
     }
+
     .product__price h5 {
         font-size: 10px;
     }
+
     .product__rating {
         margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 1175px) {
+    .bonus__box:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 778px) {
+    .bonus__box:nth-child(1) {
+        display: none;
+    }
+}
+
+@media (max-width: 498px) {
+    .bonus__box:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .bonus__box:nth-child(4) {
+        animation: horizontal_move 1s linear 0s infinite alternate none;
+        animation-play-state: running;
+    }
+
+    @keyframes horizontal_move {
+        0% {
+            margin-left: 0px;
+        }
+
+        50% {
+            margin-left: 10px;
+        }
+
+        100% {
+            margin-left: 20px;
+        }
+    }
+
+    .author__social a i {
+        font-size: 16px;
+    }
+    .bonus__box p {
+        font-size: 15px;
+    }
+    .bonus__box h1 {
+        font-size: 16px;
+    }
+
+    .bonus__box:nth-child(4) {
+        flex-grow: 1;
     }
 }
