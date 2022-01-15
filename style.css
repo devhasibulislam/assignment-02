@@ -80,6 +80,10 @@ header {
     width: 30%;
 }
 
+.group__menu{
+    display: none;
+}
+
 .header__menu ul {
     display: flex;
     flex-direction: row;
