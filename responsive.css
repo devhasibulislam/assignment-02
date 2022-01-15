@@ -649,3 +649,9 @@
         background-attachment: fixed;
     }
 }
+
+@media (max-width: 428px) {
+    .popular__collection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
